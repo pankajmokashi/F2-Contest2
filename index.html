@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="prof-list flex">
+                <p>Filter ui cards via their profession.</p>
+                <div>
+                    <select name="prof" id="prof">
+                        <option value="">Profession</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+                    <div id="ol" class="display-items">
+    
+                    </div>
+                <button id="filter">Filter</button>
+            </div>
+            <div class="add-user flex">
+                <p>Add a new user</p>
+                <div class="details">
+                    <div>
+                        <label for="name">Enter Name</label>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="profession">Enter Profession</label>
+                        <input type="text" placeholder="Profession">
+                    </div>
+                    <div>
+                        <label for="age">Enter Age</label>
+                        <input type="number" placeholder="Age">
+                    </div>
+                </div>
+                <button id="add">Add User</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"> 
+    </script>
+</body>
+</html>

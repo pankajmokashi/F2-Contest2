@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+.container {
+    color: white;
+    width: 100vw;
+    height: 100%;
+    
+}
+.content{
+    padding: 0 90px;
+    width: calc(100% - 180px);
+    height: auto;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+p, button, select{
+    font-weight: 300;
+    font-size: 35px;
+}
+label, .items, input{
+    font-weight: 400;
+    font-size: 24px;
+}
+input, .items{
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+.items{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 30px;
+}
+input{
+    padding: 30px;
+    cursor: pointer;
+}
+button{
+    padding: 15px 60px;
+    cursor: pointer;
+    color: black;
+}
+select{
+    border: 1px solid white;
+    padding: 20px;
+    cursor: pointer;
+    color: black;
+}
+p{
+    margin-top: 100px;
+}
+button, select, .details{
+    margin-top: 60px;
+}
+#add{
+    margin-bottom: 50px;
+}
+
+.display-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(100% - 80px);
+    gap: 40px;
+} 
+.details > div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 20px;
+}
+select > option{
+    background-color: black;
+    color: white;
+}
+select > option:hover{
+    color: black;
+}
+
+
+button:hover{
+    scale: 1.1;
+}
+
+button:active{
+    scale: 0.9;
+}
+
+
+
+@media only screen and (max-width: 570px) {
+    .content{
+        padding: 0 20px;
+        width: calc(100% - 40px);
+        height: auto;
+    }
+    li{
+        margin-right: 50px;
+    }
+    .details > div{
+        gap: 5px;
+    }
+    .display-items{
+        width: calc(100% - 40px);
+    }
+    input{
+        padding: 20px;
+    }
+    button{
+        padding: 10px 25px;
+    }
+    select{
+        padding: 15px;
+    }
+    option{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    
+    input{
+        padding: 10px;
+    }
+    button{
+        padding: 10px 40px;
+    }
+    select{
+        padding: 10px;
+    }
+    p, button, select{
+        font-weight: 300;
+        font-size: 25px;
+    }
+    label,.items, input{
+        font-weight: 400;
+        font-size: 16px;
+    }
+    p{
+        margin-top: 70px;
+    }
+    button, select, .details{
+        margin-top: 40px;
+    }
+    .details{
+        gap: 20px;
+    } 
+    .display-items{
+        width: calc(100% - 40px);
+    }
+    .items{
+        gap: 20px;
+    }
+    option{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .display-items{
+        width: 100%;
+    }
+    input{
+        max-width: 150px;
+    }
+    button{
+        padding: 5px 15px;
+    }
+    select{
+        font-size: 20px;
+    }
+}
